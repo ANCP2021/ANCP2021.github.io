@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - PhD Student in Computer Science</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: var(--secondary-color);
+        }
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: var(--primary-color);
+            color: white;
+            margin-bottom: 30px;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .profile-picture:hover {
+            transform: scale(1.05);
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .contact-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-list li {
+            margin-bottom: 10px;
+        }
+        .contact-list i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--secondary-color);
+        }
+        .cv-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cv-button:hover {
+            background-color: var(--secondary-color);
+        }
+        /* New styles for navigation */
+        .nav-header {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-header">
+        <div class="nav-container">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#research" class="nav-link">Research</a>
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#teaching" class="nav-link">Teaching</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="/api/placeholder/200/200" alt="John Doe" class="profile-picture">
+            <h1>John Doe</h1>
+            <p>PhD Student in Computer Science</p>
+            <p>Example University</p>
+        </div>
+
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a passionate PhD student in Computer Science at Example University, focusing on [Your Research Area]. My research interests include [Topic 1], [Topic 2], and [Topic 3]. I am dedicated to pushing the boundaries of knowledge in my field and contributing to innovative solutions that can make a real-world impact.</p>
+        </div>
+
+        <div id="research" class="section">
+            <h2>Research Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> Brief description of your first project, highlighting its significance and your role.</li>
+                <li><strong>Project 2:</strong> Brief description of your second project, emphasizing any notable achievements or outcomes.</li>
+            </ul>
+        </div>
+
+        <div id="publications" class="section">
+            <h2>Publications</h2>
+            <ul>
+                <li>Doe, J., et al. (2023). "Title of Your Paper." <em>Conference or Journal Name</em>. DOI: [DOI number]</li>
+                <li>Smith, A., Doe, J., et al. (2022). "Another Paper Title." <em>Conference or Journal Name</em>. DOI: [DOI number]</li>
+            </ul>
+        </div>
+
+        <div id="teaching" class="section">
+            <h2>Teaching Experience</h2>
+            <ul>
+                <li><strong>Teaching Assistant:</strong> Course Name, Semester Year
+                    <ul>
+                        <li>Brief description of responsibilities and achievements</li>
+                    </ul>
+                </li>
+                <li><strong>Guest Lecturer:</strong> Topic, Course Name, Date
+                    <ul>
+                        <li>Overview of the lecture and its impact</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <h3>Programming Languages</h3>
+            <div class="skill-list">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">Java</span>
+                <span class="skill-item">C++</span>
+            </div>
+            <h3>Technologies</h3>
+            <div class="skill-list">
+                <span class="skill-item">Machine Learning</span>
+                <span class="skill-item">Data Analysis</span>
+                <span class="skill-item">Web Development</span>
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> <a href="mailto:john.doe@example.edu">john.doe@example.edu</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com/johndoe">github.com/johndoe</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>CV</h2>
+            <a href="path/to/your/cv.pdf" class="cv-button">Download CV (PDF)</a>
+        </div>
+    </div>
+</body>
+</html>
