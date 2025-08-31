@@ -1,0 +1,12 @@
+/* Main CSS File - Imports all modular stylesheets */
+
+/* Import order matters for proper cascading */
+@import 'base.css';
+@import 'navigation.css';
+@import 'components.css';
+@import 'home.css';
+@import 'publications.css';
+@import 'experience.css';
+@import 'contact.css';
+@import 'footer.css';
+@import 'responsive.css';

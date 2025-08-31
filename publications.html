@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Alexander Nemecek</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/bubbles.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <h1 class="page-title">Publications</h1>
+        
+        <div class="content-section">
+            <h2><i class="fas fa-star"></i> Featured Publications</h2>
+            
+            <div class="publication-item-featured">
+                <div class="publication-header">
+                    <h3>Topic-Based Watermarks for Large Language Models</h3>
+                    <div class="publication-meta">
+                        <span class="publication-year">2024</span>
+                        <span class="publication-status">Preprint</span>
+                    </div>
+                </div>
+                <p><strong>Authors:</strong> Alexander Nemecek, Yuzhou Jiang, Erman Ayday</p>
+                <p><strong>TL;DR:</strong> This paper proposes a topic-based watermarking scheme for large language models that partitions vocabulary into semantically aligned token subsets rather than random lists. We demonstrate that our method achieves comparable text quality to industry systems like Google's SynthID-Text while providing enhanced robustness against paraphrasing and lexical perturbation attacks, offering a lightweight approach that requires minimal computational overhead and facilitates straightforward adoption in production pipelines.</p>
+                <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2404.02138" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Read Paper
+                    </a>
+                    <button class="btn btn-secondary" onclick="showBibtex('bibtex1')">
+                        <i class="fas fa-quote-left"></i> BibTeX
+                    </button>
+                    <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-code"></i> Code</a> -->
+                </div>
+            </div>
+
+            <div class="publication-item-featured">
+                <div class="publication-header">
+                    <h3>Watermarking Without Standards Is Not AI Governance</h3>
+                    <div class="publication-meta">
+                        <span class="publication-year">2025</span>
+                        <span class="publication-status">Preprint</span>
+                    </div>
+                </div>
+                <p><strong>Authors:</strong> Alexander Nemecek, Yuzhou Jiang, Erman Ayday</p>
+                <p><strong>TL;DR:</strong> This paper argues that current watermarking for AI-generated content lacks the technical robustness and standardization needed for effective governance, often failing basic transformations like paraphrasing. We propose a three-layer framework requiring technical standards, independent audits, and enforceable policies to transform watermarking from symbolic compliance into meaningful accountability.</p>
+                <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2505.23814" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Read Paper
+                    </a>
+                    <button class="btn btn-secondary" onclick="showBibtex('bibtex2')">
+                        <i class="fas fa-quote-left"></i> BibTeX
+                    </button>
+                    <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-code"></i> Code</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2><i class="fas fa-book-open"></i> Additional Publications</h2>
+            
+            <div class="publication-item-preprint">
+                <div class="publication-header">
+                    <h3>ZKPROV: A Zero-Knowledge Approach to Dataset Provenance for Large Language Models</h3>
+                    <div class="publication-meta">
+                        <span class="publication-year">2025</span>
+                        <span class="publication-status">Preprint</span>
+                    </div>
+                </div>
+                <p><strong>Authors:</strong> Mina Namazi, Alexander Nemecek, Erman Ayday</p>
+                <p><strong>TL;DR:</strong> This paper introduces ZKPROV, a cryptographic framework that uses zero-knowledge proofs to verify that large language model responses derive from authorized datasets without revealing the dataset contents or model parameters. Unlike existing approaches that prove computational correctness, ZKPROV provides statistical guarantees that a model was trained on specific authenticated data through efficient recursive proof systems, achieving verification for practical deployment in regulated domains like healthcare.</p>
+                <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2506.20915" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Read Paper
+                    </a>
+                    <button class="btn btn-secondary" onclick="showBibtex('bibtex3')">
+                        <i class="fas fa-quote-left"></i> BibTeX
+                    </button>
+                    <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-code"></i> Code</a> -->
+                </div>
+            </div>
+
+            <div class="publication-item-preprint">
+                <div class="publication-header">
+                    <h3>The Feasibility of Topic-Based Watermarking on Academic Peer Reviews</h3>
+                    <div class="publication-meta">
+                        <span class="publication-year">2025</span>
+                        <span class="publication-status">Preprint</span>
+                    </div>
+                </div>
+                <p><strong>Authors:</strong> Alexander Nemecek, Yuzhou Jiang, Erman Ayday</p>
+                <p><strong>TL;DR:</strong> This paper evaluates topic-based watermarking (TBW) for detecting LLM-generated academic peer reviews, finding that it preserves review quality while maintaining strong detection accuracy even under paraphrasing attacks. Using authentic conference data, the study shows TBW can reliably identify machine-generated reviews across different model configurations without degrading semantic content, offering a practical solution for enforcing peer review policies that prohibit LLM assistance.</p>
+                <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2505.21636" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Read Paper
+                    </a>
+                    <button class="btn btn-secondary" onclick="showBibtex('bibtex4')">
+                        <i class="fas fa-quote-left"></i> BibTeX
+                    </button>
+                    <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-code"></i> Code</a> -->
+                </div>
+            </div>
+
+            <div class="publication-item-preprint">
+                <div class="publication-header">
+                    <h3>Cluster-Aware Attacks on Graph Watermarks</h3>
+                    <div class="publication-meta">
+                        <span class="publication-year">2025</span>
+                        <span class="publication-status">Preprint</span>
+                    </div>
+                </div>
+                <p><strong>Authors:</strong> Alexander Nemecek, Emre Yilmaz, Erman Ayday</p>
+                <p><strong>TL;DR:</strong> This paper introduces cluster-aware attacks on graph watermarks, where adversaries exploit community structure to strategically add/remove edges within or between clusters, degrading watermark detection by up to 80% more than random attacks. The authors propose a mitigation strategy that distributes watermark nodes across graph communities, improving attribution accuracy by up to 60% under attack while maintaining computational efficiency and structural integrity.</p>
+                <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2504.17971" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Read Paper
+                    </a>
+                    <button class="btn btn-secondary" onclick="showBibtex('bibtex5')">
+                        <i class="fas fa-quote-left"></i> BibTeX
+                    </button>
+                    <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-code"></i> Code</a> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- BibTeX Modal -->
+        <div id="bibtexModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>BibTeX Citation</h3>
+                    <span class="close" onclick="closeBibtex()">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <pre id="bibtexContent"></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="copyBibtex()">
+                        <i class="fas fa-copy"></i> Copy Citation
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2><i class="fas fa-chart-bar"></i> Publication Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Total Papers</h3>
+                    <span class="stat-number">5</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Citations</h3>
+                    <span class="stat-number">15</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>H-Index</h3>
+                    <span class="stat-number">2</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Years Active</h3>
+                    <span class="stat-number">2</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

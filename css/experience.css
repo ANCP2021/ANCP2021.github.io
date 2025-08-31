@@ -1,0 +1,385 @@
+/* Experience Page Specific Styles */
+
+/* Enhanced Education/Experience styles */
+.education-item {
+    margin-bottom: 28px;
+    padding: 24px;
+    background: var(--bg-accent);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+}
+
+.education-item h3 {
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Experience item variants with different border colors */
+.experience-item-primary {
+    margin-bottom: 28px;
+    padding: 24px;
+    background: var(--bg-accent);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.experience-item-primary:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+}
+
+.experience-item-primary h3 {
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.experience-item-secondary {
+    margin-bottom: 28px;
+    padding: 24px;
+    background: var(--bg-accent);
+    border-radius: 12px;
+    border-left: 4px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.experience-item-secondary:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+}
+
+.experience-item-secondary h3 {
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.experience-item-accent {
+    margin-bottom: 28px;
+    padding: 24px;
+    background: var(--bg-accent);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.experience-item-accent:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+}
+
+.experience-item-accent h3 {
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Experience section with unique color */
+.experience-item-experience {
+    margin-bottom: 28px;
+    padding: 24px;
+    background: var(--bg-accent);
+    border-radius: 12px;
+    border-left: 4px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.experience-item-experience:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+}
+
+.experience-item-experience h3 {
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.experience-item-experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+}
+
+.experience-item-experience li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.experience-item-experience li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.experience-item-experience li:hover {
+    color: var(--text-primary);
+    transform: translateX(4px);
+}
+
+.experience-item-experience li:hover::before {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.experience-item-experience p:nth-of-type(2) {
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 6px;
+    border-left: 3px solid var(--accent-color);
+}
+
+/* Skills Section Styles */
+.skills-container {
+    margin-top: 24px;
+}
+
+.skills-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.skills-row:last-child {
+    margin-bottom: 0;
+}
+
+.skill-category {
+    background: var(--bg-accent);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.skill-category h3 {
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.skill-category h3 i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 24px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.skill-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.skill-list li:hover {
+    color: var(--text-primary);
+    transform: translateX(4px);
+}
+
+.skill-list li:hover::before {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Teaching Experience Styles */
+.experience-item-primary ul,
+.experience-item-secondary ul,
+.experience-item-accent ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+}
+
+.experience-item-primary li,
+.experience-item-secondary li,
+.experience-item-accent li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.experience-item-primary li::before,
+.experience-item-secondary li::before,
+.experience-item-accent li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.experience-item-primary li:hover,
+.experience-item-secondary li:hover,
+.experience-item-accent li:hover {
+    color: var(--text-primary);
+    transform: translateX(4px);
+}
+
+.experience-item-primary li:hover::before,
+.experience-item-secondary li:hover::before,
+.experience-item-accent li:hover::before {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+
+
+/* Course info styling */
+.experience-item-primary p:nth-of-type(2),
+.experience-item-secondary p:nth-of-type(2),
+.experience-item-accent p:nth-of-type(2) {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+/* Education section styling - Focus, Advisor, Relevant Coursework */
+.experience-item-primary p:nth-of-type(2),
+.experience-item-primary p:nth-of-type(3),
+.experience-item-primary p:nth-of-type(4) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.experience-item-primary p:nth-of-type(2) strong,
+.experience-item-primary p:nth-of-type(3) strong,
+.experience-item-primary p:nth-of-type(4) strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Responsive adjustments for skills */
+@media (max-width: 768px) {
+    .skills-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .skill-category {
+        padding: 20px;
+    }
+    
+    .skill-list li {
+        padding-left: 20px;
+    }
+}
+
+/* Organization Logo Styles */
+.org-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.org-logo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    min-width: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.org-info:hover .org-logo {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.org-info p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.org-info p strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Responsive adjustments for organization logos */
+@media (max-width: 768px) {
+    .org-info {
+        gap: 10px;
+    }
+    
+    .org-logo {
+        font-size: 1.3rem;
+        min-width: 20px;
+        max-height: 35px;
+    }
+    
+    .org-info p {
+        font-size: 0.95rem;
+    }
+}

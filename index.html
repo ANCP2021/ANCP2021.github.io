@@ -3,188 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Nemecek - PhD Student in Computer Science</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <title>Alexander Nemecek - Personal Website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/bubbles.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="nav-header">
-        <div class="nav-container">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#teaching" class="nav-link">Teaching</a>
-            <a href="#publications" class="nav-link">Publications</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="header">
-            <h1>Alexander Nemecek</h1>
-            <p>PhD Student in Computer Science</p>
-            <p>Case Western Reserve University</p>
-        </div>
-
-        <div id="about" class="section">
-            <h2>About Me</h2>
-            <p>I am a passionate PhD student in Computer Science at Case Western Reserve University, focusing on intersections of security, privacy, and trust in artificial intelligence and machine learning. My current research is on the detection and robustness of machine-generated versus human-generated text, with specific interests in watermarking techniques and capabilities of Large Language Models.</p>
-        </div>
-
-        <div id="experience" class="section">
-            <h2>Experience</h2>
-            <div class="subsection">
-                <h3>Sandia National Laboratories</h3>
-                <p><em>Research and Development Intern, May 2024 - Present</em></p>
-                <ul>
-                    <li>Trained and fine-tuned large language models (LLMs) on manually collected security datasets for internal software analysis application.</li>
-                    <li>Integrated LLMs into current training, querying, and evaluation pipeline, achieving ~80% reduction in processing time through optimization techniques.</li>
-                    <li>Evaluated fine-tuned and baseline LLMs on recognizing and classifying historical internet data.</li>
-                </ul>
-            </div>
-            <div class="subsection">
-                <h3>Case Western Reserve University</h3>
-                <p><em>Research Assistant, Aug 2023 - Present</em></p>
-                <ul>
-                    <li>Developed topic-based watermarking algorithm for LLMs, embedding detectable signatures within generated text to address limitations and enhance robustness to various attacks against existing watermarking schemes.</li>
-                    <li>Led an xLab program project with Progressive Insurance, managing an 8-person team in TypeScript application and machine learning model development with streamlined AWS deployment.</li>
-                    <li>Conducted literature reviews for conferences on security, privacy, artificial intelligence, and machine learning.</li>
-                    <li><a href="https://engineering.case.edu/research/labs/SPiD">Lab Website</a>.</li>
-                </ul>
-            </div>
-            <div class="subsection">
-                <h3>Cisco Systems</h3>
-                <p><em>Hardware Engineer: Software Development Intern, May 2023 - Aug 2023</em></p>
-                <ul>
-                    <li>Developed and deployed software utilizing PHP to search, filter, and compare historical metrics, automating report generation and streamlining operations.</li>
-                    <li>Implemented efficient pipelines with Python and SQL/Snowflake for data upload, parsing, manipulation, and evaluation, ensuring accuracy.</li>
-                    <li>Spearheaded comprehensive documentation demonstrating software value to stakeholders, facilitating a smooth transition for incoming team to ensure continuity.</li>
-                </ul>
-            </div>
-            <div class="subsection">
-                <h3>Ohio University</h3>
-                <p><em>Data Research Analyst | XR Software Research Engineer, Sep 2021 - Mar 2023</em></p>
-                <ul>
-                    <li>Directed development of spatial awareness virtual reality application to aid individuals with perception dysfunction disorders, in partnership with the School of Medicine.</li>
-                    <li>Collaborated with industry partners to create an augmented reality experience enhancing interaction between robots and humans, increasing productivity.</li>
-                    <li>Conducted comprehensive analysis of identical datasets; compiled graphical visualizations comparing time complexity and accuracy of different implementations.</li>
-                </ul>
-            </div>
-            <div class="subsection">
-                <h3>Sherwin-Williams</h3>
-                <p><em>Software Engineer Intern, May 2022 - Aug 2022</em></p>
-                <ul>
-                    <li>Transferred and transformed data across multiple enterprise levels; developed OLAP cube models with Snowflake SnowSQL and implemented SQL queries against Snowflake.</li>
-                    <li>Implemented front-end visualizations using Tableau; validated 20+ KPIs between Tableau end-user layer and Snowflake semantic layer; corrected data mismatches and bugs.</li>
-                </ul>
+    <main>
+        <h1 class="page-title">Welcome to My Research</h1>
+        
+        <!-- New Header Section -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-name">Alexander Nemecek</h1>
+                <h2 class="hero-title">PhD Candidate in Computer Science</h2>
+                <p class="hero-subtitle">AI Security & Trustworthiness Researcher at Case Western Reserve University</p>
+                
+                <div class="hero-social-links">
+                    <a href="./assets/docs/Resume - Alexander Nemecek.pdf" class="hero-social-link resume" download="Alexander_Nemecek_Resume.pdf">
+                        <i class="fas fa-file-alt"></i>
+                        Resume
+                    </a>
+                    <a href="https://github.com/ANCP2021" class="hero-social-link github">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexander-nemecek/" class="hero-social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=Vg3MJLUAAAAJ&hl=en&authuser=4" class="hero-social-link google-scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                        Google Scholar
+                    </a>
+                    <a href="mailto:ajn98@case.edu" class="hero-social-link email">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                </div>
             </div>
         </div>
-
-        <div id="teaching" class="section">
-            <h2>Teaching Experience</h2>
-            <p>As a Teaching Assistant at Case Western Reserve University:</p>
-            <ul>
-                <li><strong>Computer Security</strong> - Fall 2024</li>
-                <li><strong>Computer Security</strong> - Spring 2024</li>
-                <li><strong>Data Structures</strong> - Fall 2023</li>
-            </ul>
-            <p>My responsibilities as a TA included leading discussion sections, grading assignments, holding office hours, assisting students with course material and projects, and occasionally delivering lectures to supplement the primary instructor's teaching.</p>        
+        
+        <div class="content-section">
+            <h2><i class="fas fa-user-graduate"></i> About Me</h2>
+            <p>I'm a PhD candidate at Case Western Reserve University specializing in AI security and trustworthiness. My research 
+                focuses on watermarking and forensics for large language models, essentially creating ways to trace and verify AI-generated content.</p>
+            <p>With a background spanning both Computer Science and Psychology, I bring a unique perspective to understanding how AI systems interact 
+                with people and society. I'm passionate about building AI that's not just powerful, but transparent and accountable.</p>
+            <p>My work addresses critical questions: How do we detect AI-generated content? How do we ensure AI systems are trustworthy 
+                across different industries? How do we govern these technologies responsibly?</p>
         </div>
 
-        <div id="publications" class="section">
-            <h2>Publications & Presentations</h2>
-            <div class="subsection">
-                <h3>Conference Posters</h3>
-                <ul>
-                    <li>A. Nemecek, R. Abbott, and C. Garasi, "Can Smaller Expert Modules Enhance RAG Performance?", Chesapeake Large-Scale Analytics Conference (CLSAC), Annapolis, MD, November 2024, Invited Poster.</li>
-                    <li>A. Nemecek, Y. Jiang, and E. Ayday, "Topic-Based Watermarks for LLM-Generated Text", Privacy Enhancing Technologies Symposium (PETS), Bristol, UK, July 2024, <a href="https://petsymposium.org/2024/accepted-posters.php">Accepted Poster</a>.</li>
-                    <li>A. Nemecek and C. Mourning, "Detecting Network Attacks using Machine Learning Models", The Ohio Academy of Science. Piqua, OH, April 2023.</li>
-                </ul>
-            </div>
-            <div class="subsection">
-                <h3>Preprints</h3>
-                <ul>
-                    <li>A. Nemecek, Y. Jiang, and E. Ayday, "Topic-Based Watermarks for LLM-Generated Text", <a href="https://arxiv.org/abs/2404.02138">arXiv:2404.02138</a>, April 2024.</li>
-                </ul>
+        <div class="content-section">
+            <h2><i class="fas fa-book"></i> Selected Publications</h2>
+            <div class="publications-grid">
+                <div class="publication-item-featured">
+                    <div class="publication-header">
+                        <h3>Topic-Based Watermarks for Large Language Models</h3>
+                        <div class="authors">Alexander Nemecek, Yuzhou Jiang, Erman Ayday</div>
+                    </div>
+                    <div class="publication-content">
+                        <div class="tldr">
+                            <h4>TL;DR</h4>
+                            <p>This paper proposes a topic-based watermarking scheme for large language models that partitions vocabulary into semantically aligned token subsets rather than random lists. We demonstrate that our method achieves comparable text quality to industry systems like Google's SynthID-Text while providing enhanced robustness against paraphrasing and lexical perturbation attacks, offering a lightweight approach that requires minimal computational overhead and facilitates straightforward adoption in production pipelines.</p>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://arxiv.org/pdf/2404.02138" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-file-pdf"></i> Read Paper
+                            </a>
+                            <button class="btn btn-secondary" onclick="showBibtex('bibtex1')">
+                                <i class="fas fa-quote-left"></i> BibTeX
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-item-featured">
+                    <div class="publication-header">
+                        <h3>Watermarking Without Standards Is Not AI Governance</h3>
+                        <div class="authors">Alexander Nemecek, Yuzhou Jiang, Erman Ayday</div>
+                    </div>
+                    <div class="publication-content">
+                        <div class="tldr">
+                            <h4>TL;DR</h4>
+                            <p>This paper argues that current watermarking for AI-generated content lacks the technical robustness and standardization needed for effective governance, often failing basic transformations like paraphrasing. We propose a three-layer framework requiring technical standards, independent audits, and enforceable policies to transform watermarking from symbolic compliance into meaningful accountability.</p>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://arxiv.org/pdf/2505.23814" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-file-pdf"></i> Read Paper
+                            </a>
+                            <button class="btn btn-secondary" onclick="showBibtex('bibtex2')">
+                                <i class="fas fa-quote-left"></i> BibTeX
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div id="projects" class="section">
-            <h2>Research & Projects</h2>
-            <div class="subsection">
-                <h3>Ensemble Methodologies Evaluation</h3>
-                <p><em>Aug 2023 - Sep 2024</em></p>
-                <ul>
-                    <li>Compiled and analyzed comparative analysis across ensemble methods including boosting, stacking, Bayesian model averaging, and bucket of models with a focus on boosting methodologies.</li>
-                    <li>Implemented a modified XGBoost algorithm tailored to imbalanced data and developed novel research extension enhancing capabilities in handling unique data structures, leveraging in-depth knowledge acquired from extensive literature review on boosting and neural network methods.</li>
-                    <li><a href="https://github.com/ANCP2021/Imbalanced-Stacked-DNNBoost">Imbalanced Stacked DNNBoost</a>.</li>
-                </ul>
-            </div>
-            <div class="subsection">
-                <h3>Choose Ohio First Research Fellowship</h3>
-                <p><em>Aug 2022 - May 2023</em></p>
-                <ul>
-                    <li>Developed accurate classifiers achieving above 95% accuracy on 12.7 million traces of attacks, providing valuable insights for proactive measures against detrimental outcomes.</li>
-                    <li>Reviewed machine learning literature to implement pipeline predicting DDoS attacks, utilizing Python (e.g., Scikit-learn, TensorFlow) for feature selection, manipulation, and visualization.</li>
-                    <li><a href="https://github.com/ANCP2021/Network-Attack-Detection-using-Machine-Leaning-Models">Network Attack Detection using Machine Leaning Models</a>.</li>
-                    <li><a href="https://www.ohio.edu/news/2023/03/ohios-choose-ohio-first-scholars-present-ohio-statehouse">Story about Fellowship</a>.</li>
-                </ul>
-            </div>
-            <div class="subsection">
-                <h3>Fostering My Journey: iOS & Android App</h3>
-                <p><em>Aug 2022 - May 2023</em></p>
-                <ul>
-                    <li>Researched and developed scalable, cross-platform mobile application providing a way of preserving memories for foster children with the possibility of moving in early childhood.</li>
-                    <li>Leveraged AWS to design cloud architecture for storing user data and providing essential notifications and functions while ensuring privacy and confidentiality of information shared.</li>
-                    <li><a href="https://www.ohio.edu/news/2023/04/computer-science-students-design-app-help-children-foster-care">More on Fostering My Journey</a>.</li>
-                </ul>
+        <!-- BibTeX Modal -->
+        <div id="bibtexModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>BibTeX Citation</h3>
+                    <span class="close" onclick="closeBibtex()">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <pre id="bibtexContent"></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="copyBibtex()">
+                        <i class="fas fa-copy"></i> Copy Citation
+                    </button>
+                </div>
             </div>
         </div>
 
-        <div id="skills" class="section">
-            <h2>Skills</h2>
-            <h3>Technical Languages</h3>
-            <div class="skill-list">
-                <span class="skill-item">C++</span>
-                <span class="skill-item">C#</span>
-                <span class="skill-item">JavaScript</span>
-                <span class="skill-item">PHP</span>
-                <span class="skill-item">Python</span>
-                <span class="skill-item">TypeScript</span>
-            </div>
-            <h3>Frameworks & Tools</h3>
-            <div class="skill-list">
-                <span class="skill-item">Angular</span>
-                <span class="skill-item">AWS</span>
-                <span class="skill-item">Git</span>
-                <span class="skill-item">React Native</span>
-                <span class="skill-item">Unity3D</span>
-            </div>
-            <h3>Machine Learning</h3>
-            <div class="skill-list">
-                <span class="skill-item">Hugging Face</span>
-                <span class="skill-item">LangChain</span>
-                <span class="skill-item">Scikit-Learn</span>
-            </div>
-            <h3>Data Analysis</h3>
-            <div class="skill-list">
-                <span class="skill-item">MongoDB</span>
-                <span class="skill-item">Pandas</span>
-                <span class="skill-item">SQL</span>
-                <span class="skill-item">Snowflake</span>
-                <span class="skill-item">SnowSQL</span>
-                <span class="skill-item">Tableau</span>
+        <div class="content-section">
+            <h2><i class="fas fa-newspaper"></i> Recent Updates</h2>
+            <div class="update-grid">
+                <div class="update-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Workshop Paper Accepted</h3>
+                    <p>Our workshop paper on Watermarking AI Governance has been accepted at ICML's Technical AI Governance Workshop 2025!</p>
+                </div>
+                <div class="update-item">
+                    <i class="fas fa-building"></i>
+                    <h3>Research Internship</h3>
+                    <p>Starting year-round research internship at Sandia National Labs focusing on AI security.</p>
+                </div>
+                <div class="update-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>PhD Candidacy</h3>
+                    <p>Successfully advanced to PhD candidacy at CWRU in April 2025.</p>
+                </div>
             </div>
         </div>
 
-        <div id="contact" class="section">
-            <h2>Contact</h2>
-            <ul class="contact-list">
-                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/alexandernemecek">linkedin.com/in/alexandernemecek</a></li>
-                <li><i class="fab fa-github"></i> <a href="https://github.com/ANCP2021">github.com/ANCP2021</a></li>
-            </ul>
+        <div class="content-section">
+            <h2><i class="fas fa-microscope"></i> Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-area">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>AI Security & Forensics</h3>
+                    <p>Developing watermarking and provenance tracking techniques for large language models and AI-generated content.</p>
+                </div>
+                <div class="research-area">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>AI Governance</h3>
+                    <p>Exploring policy frameworks and ethical guidelines for responsible AI deployment across different domains.</p>
+                </div>
+            <div class="research-area">
+                    <i class="fas fa-search"></i>
+                    <h3>Trustworthy AI</h3>
+                    <p>Investigating methods to ensure AI systems are transparent, accountable, and reliable in real-world applications.</p>
+            </div>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
