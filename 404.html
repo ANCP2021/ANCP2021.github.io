@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - You've Ventured Too Far, Partner | Alexander Nemecek</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/404.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main class="page-404">
+        <div class="error-content">
+            <h1 class="error-code">404</h1>
+            
+            <div class="cowboy-scene">
+                <!-- Wild West Landscape (stick figure style) -->
+                <svg class="landscape" viewBox="0 0 400 200" aria-hidden="true">
+                    <!-- Sky gradient -->
+                    <defs>
+                        <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#87CEEB"/>
+                            <stop offset="100%" style="stop-color:#E8D5B7"/>
+                        </linearGradient>
+                        <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700"/>
+                            <stop offset="100%" style="stop-color:#FFA500"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="400" height="200" fill="url(#skyGrad)"/>
+                    <!-- Sun -->
+                    <circle class="sun" cx="320" cy="45" r="25" fill="url(#sunGrad)"/>
+                    <!-- Mountains (stick-figure style triangles) -->
+                    <polygon points="0,200 80,80 160,200" fill="#8B7355" stroke="#5D4E37" stroke-width="2"/>
+                    <polygon points="100,200 180,60 260,200" fill="#A0826D" stroke="#5D4E37" stroke-width="2"/>
+                    <polygon points="220,200 300,90 400,200" fill="#8B7355" stroke="#5D4E37" stroke-width="2"/>
+                    <!-- Desert ground -->
+                    <ellipse cx="200" cy="210" rx="250" ry="30" fill="#D4A574" stroke="#B8956A" stroke-width="2"/>
+                    <!-- Cacti (stick figure style) -->
+                    <line x1="50" y1="200" x2="50" y2="140" stroke="#2D5A27" stroke-width="4"/>
+                    <line x1="50" y1="160" x2="30" y2="175" stroke="#2D5A27" stroke-width="3"/>
+                    <line x1="50" y1="175" x2="70" y2="165" stroke="#2D5A27" stroke-width="3"/>
+                    <line x1="350" y1="200" x2="350" y2="150" stroke="#2D5A27" stroke-width="4"/>
+                    <line x1="350" y1="165" x2="330" y2="155" stroke="#2D5A27" stroke-width="3"/>
+                </svg>
+
+                <!-- Stick Figure Cowboy -->
+                <div class="cowboy-wrapper">
+                    <svg class="cowboy" viewBox="0 0 80 120" aria-hidden="true">
+                        <!-- Cowboy hat -->
+                        <ellipse class="hat-brim" cx="40" cy="28" rx="22" ry="6" fill="#3d2914" stroke="#2d1f0f" stroke-width="1"/>
+                        <path class="hat-crown" d="M 25 28 L 40 16 L 55 28 Z" fill="#3d2914" stroke="#2d1f0f" stroke-width="1"/>
+                        <!-- Head -->
+                        <circle class="head" cx="40" cy="42" r="8" fill="none" stroke="#2d2d2d" stroke-width="2"/>
+                        <!-- Body -->
+                        <line class="torso" x1="40" y1="50" x2="40" y2="80" stroke="#2d2d2d" stroke-width="2"/>
+                        <!-- Belt and buckle -->
+                        <line class="belt" x1="28" y1="77" x2="52" y2="77" stroke="#2d2d2d" stroke-width="2"/>
+                        <rect class="buckle" x="35" y="73" width="10" height="8" rx="1" fill="#c9a227" stroke="#2d2d2d" stroke-width="1"/>
+                        <!-- Arms (one waving) -->
+                        <line class="arm-arm" x1="40" y1="55" x2="25" y2="70" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="arm-wave" x1="40" y1="55" x2="55" y2="58" stroke="#2d2d2d" stroke-width="2"/>
+                        <!-- Legs -->
+                        <line class="leg-left" x1="40" y1="80" x2="30" y2="102" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="leg-right" x1="40" y1="80" x2="50" y2="102" stroke="#2d2d2d" stroke-width="2"/>
+                        <!-- Boots -->
+                        <path class="boot boot-left" d="M 30 102 L 26 102 L 26 112 L 34 112 L 34 106 L 30 102" fill="#3d2914" stroke="#2d2d2d" stroke-width="1"/>
+                        <path class="boot boot-right" d="M 50 102 L 46 102 L 46 112 L 54 112 L 54 106 L 50 102" fill="#3d2914" stroke="#2d2d2d" stroke-width="1"/>
+                    </svg>
+                    <!-- Speech bubble -->
+                    <div class="speech-bubble">
+                        <p>Howdy! You've ventured too far, partner.</p>
+                        <p>Take a load off, or go back the way you came.</p>
+                    </div>
+                </div>
+
+                <!-- Stick figure horses -->
+                <div class="horse horse-1" aria-hidden="true">
+                    <svg viewBox="0 0 70 40">
+                        <line class="horse-body" x1="8" y1="22" x2="45" y2="22" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-neck" x1="45" y1="22" x2="58" y2="10" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-muzzle" x1="58" y1="10" x2="65" y2="10" stroke="#2d2d2d" stroke-width="2"/>
+                        <circle class="horse-head" cx="62" cy="10" r="4" fill="none" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-leg horse-leg-fl" x1="15" y1="22" x2="12" y2="38" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-leg horse-leg-fr" x1="25" y1="22" x2="28" y2="38" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-leg horse-leg-bl" x1="35" y1="22" x2="32" y2="38" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-leg horse-leg-br" x1="45" y1="22" x2="48" y2="38" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-tail" x1="8" y1="22" x2="2" y2="8" stroke="#2d2d2d" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="horse horse-2" aria-hidden="true">
+                    <svg viewBox="0 0 70 40">
+                        <line class="horse-body" x1="8" y1="22" x2="45" y2="22" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-neck" x1="45" y1="22" x2="58" y2="10" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-muzzle" x1="58" y1="10" x2="65" y2="10" stroke="#2d2d2d" stroke-width="2"/>
+                        <circle class="horse-head" cx="62" cy="10" r="4" fill="none" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-leg horse-leg-fl" x1="15" y1="22" x2="12" y2="38" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-leg horse-leg-fr" x1="25" y1="22" x2="28" y2="38" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-leg horse-leg-bl" x1="35" y1="22" x2="32" y2="38" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-leg horse-leg-br" x1="45" y1="22" x2="48" y2="38" stroke="#2d2d2d" stroke-width="2"/>
+                        <line class="horse-tail" x1="8" y1="22" x2="2" y2="8" stroke="#2d2d2d" stroke-width="2"/>
+                    </svg>
+                </div>
+
+                <!-- Tumbleweed -->
+                <div class="tumbleweed" aria-hidden="true">
+                    <svg viewBox="0 0 40 40">
+                        <circle cx="20" cy="20" r="6" fill="none" stroke="#2d2d2d" stroke-width="1.5"/>
+                        <circle cx="12" cy="14" r="4" fill="none" stroke="#2d2d2d" stroke-width="1.5"/>
+                        <circle cx="28" cy="16" r="5" fill="none" stroke="#2d2d2d" stroke-width="1.5"/>
+                        <circle cx="14" cy="26" r="5" fill="none" stroke="#2d2d2d" stroke-width="1.5"/>
+                        <circle cx="26" cy="24" r="4" fill="none" stroke="#2d2d2d" stroke-width="1.5"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Head on back home
+                </a>
+                <a href="javascript:history.back()" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Go back the way you came
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,296 @@
+/* 404 Page - Cowboy Stick Figure Theme */
+
+.page-404 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px 24px 48px;
+    text-align: center;
+}
+
+.page-404 .error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.error-code {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    opacity: 0.9;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+/* Cowboy scene container */
+.cowboy-scene {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px 0 16px;
+}
+
+/* Landscape SVG */
+.landscape {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    background: #E8D5B7;
+}
+
+/* Sun pulse animation */
+.sun {
+    animation: sunPulse 3s ease-in-out infinite;
+}
+
+@keyframes sunPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.85; transform: scale(1.05); }
+}
+
+/* Cowboy stick figure */
+.cowboy-wrapper {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+}
+
+.cowboy {
+    width: 70px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+    animation: cowboySway 4s ease-in-out infinite;
+}
+
+/* Cowboy wave animation - arm goes up and down */
+.arm-wave {
+    transform-origin: 40px 55px;
+    animation: cowboyWave 1.5s ease-in-out infinite;
+}
+
+@keyframes cowboyWave {
+    0%, 100% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
+}
+
+@keyframes cowboySway {
+    0%, 100% { transform: translateX(0) rotate(-1deg); }
+    50% { transform: translateX(3px) rotate(1deg); }
+}
+
+/* Speech bubble */
+.speech-bubble {
+    position: relative;
+    background: var(--bg-primary);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 14px 18px;
+    max-width: 280px;
+    box-shadow: var(--shadow-md);
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-top-color: var(--bg-primary);
+    border-bottom: none;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 9px solid transparent;
+    border-top-color: var(--border-color);
+    border-bottom: none;
+}
+
+.speech-bubble p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+.speech-bubble p + p {
+    margin-top: 6px;
+}
+
+.speech-bubble p:first-child {
+    font-weight: 600;
+}
+
+/* Tumbleweed rolling across */
+.tumbleweed {
+    position: absolute;
+    bottom: 5%;
+    z-index: 3;
+    left: -50px;
+    width: 36px;
+    height: 36px;
+    animation: tumbleweedRoll 8s linear infinite;
+}
+
+.tumbleweed svg {
+    width: 100%;
+    height: 100%;
+    animation: tumbleweedSpin 1s linear infinite;
+}
+
+@keyframes tumbleweedRoll {
+    0% {
+        left: -50px;
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        left: calc(100% + 50px);
+        opacity: 0;
+    }
+}
+
+@keyframes tumbleweedSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Stick figure horses galloping across */
+.horse {
+    position: absolute;
+    bottom: 5%;
+    left: -60px;
+    width: 50px;
+    height: 34px;
+    z-index: 3;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+}
+
+.horse svg {
+    width: 100%;
+    height: 100%;
+}
+
+.horse-1 {
+    animation: horseGallop 6s linear infinite, horseBounce 0.25s ease-in-out infinite;
+}
+
+.horse-2 {
+    animation: horseGallop 6s linear infinite 3s, horseBounce 0.25s ease-in-out infinite 0.12s;
+}
+
+@keyframes horseGallop {
+    0% {
+        left: -60px;
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        left: calc(100% + 60px);
+        opacity: 0;
+    }
+}
+
+@keyframes horseBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
+/* Error action buttons */
+.error-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.error-actions .btn {
+    text-decoration: none;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .landscape {
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .speech-bubble {
+    background: var(--bg-primary);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .speech-bubble::before {
+    border-top-color: var(--bg-primary);
+}
+
+[data-theme="dark"] .speech-bubble::after {
+    border-top-color: var(--border-color);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 3rem;
+    }
+
+    .cowboy-scene {
+        max-width: 100%;
+    }
+
+    .cowboy-wrapper {
+        bottom: 18%;
+    }
+
+    .horse {
+        width: 40px;
+        height: 27px;
+        bottom: 5%;
+    }
+
+    .cowboy {
+        width: 55px;
+    }
+
+    .speech-bubble {
+        max-width: 240px;
+        padding: 12px 14px;
+    }
+
+    .speech-bubble p {
+        font-size: 0.9rem;
+    }
+
+    .error-actions {
+        flex-direction: column;
+    }
+
+    .error-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
