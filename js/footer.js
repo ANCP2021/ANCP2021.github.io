@@ -14,17 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Research Areas</h3>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-shield-alt"></i> AI Security & Forensics</a></li>
-                        <li><a href="#"><i class="fas fa-balance-scale"></i> AI Governance</a></li>
-                        <li><a href="#"><i class="fas fa-search"></i> Trustworthy AI</a></li>
-                        <li><a href="#"><i class="fas fa-water"></i> Watermarking</a></li>
-                        <li><a href="#"><i class="fas fa-fingerprint"></i> Digital Forensics</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
                     <h3>Connect With Me</h3>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/alexander-nemecek/" class="social-link linkedin">

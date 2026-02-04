@@ -3,104 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Nemecek - Personal Website</title>
+    <title>Alexander Nemecek - Computer Science</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
-    <script src="js/bubbles.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <main>
-        <h1 class="page-title">Welcome to My Research</h1>
-        
-        <!-- New Header Section -->
-        <div class="hero-section">
-            <div class="hero-content">
-                <h1 class="hero-name">Alexander Nemecek</h1>
-                <h2 class="hero-title">PhD Candidate in Computer Science</h2>
-                <p class="hero-subtitle">AI Security & Trustworthiness Researcher at Case Western Reserve University</p>
+        <!-- Hero + About (inspired by sbarrington.com) -->
+        <div class="hero-about-section">
+            <div class="hero-profile-group">
+                <div class="profile-image-wrapper">
+                    <img src="assets/docs/headshot.png" alt="Alexander Nemecek" class="profile-image">
+                </div>
+                <div class="hero-content">
+                <p class="hero-title">PhD Candidate, Computer Science</p>
+                <p class="hero-subtitle">Case Western Reserve University</p>
                 
                 <div class="hero-social-links">
-                    <a href="./assets/docs/Resume - Alexander Nemecek.pdf" class="hero-social-link resume" download="Alexander_Nemecek_Resume.pdf">
-                        <i class="fas fa-file-alt"></i>
-                        Resume
-                    </a>
-                    <a href="https://github.com/ANCP2021" class="hero-social-link github">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/alexander-nemecek/" class="hero-social-link linkedin">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
-                    </a>
-                    <a href="https://scholar.google.com/citations?user=Vg3MJLUAAAAJ&hl=en&authuser=4" class="hero-social-link google-scholar">
-                        <i class="fas fa-graduation-cap"></i>
-                        Google Scholar
-                    </a>
-                    <a href="mailto:ajn98@case.edu" class="hero-social-link email">
-                        <i class="fas fa-envelope"></i>
-                        Email
-                    </a>
+                    <a href="./assets/docs/Resume - Alexander Nemecek.pdf" class="hero-social-link" download="Alexander_Nemecek_Resume.pdf"><i class="fas fa-file-alt"></i> CV</a>
+                    <span class="link-sep">|</span>
+                    <a href="https://scholar.google.com/citations?user=Vg3MJLUAAAAJ&hl=en&authuser=4" class="hero-social-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                    <span class="link-sep">|</span>
+                    <a href="https://github.com/ANCP2021" class="hero-social-link"><i class="fab fa-github"></i> GitHub</a>
+                    <span class="link-sep">|</span>
+                    <a href="https://www.linkedin.com/in/alexander-nemecek/" class="hero-social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <span class="link-sep">|</span>
+                    <a href="mailto:ajn98@case.edu" class="hero-social-link"><i class="fas fa-envelope"></i> Email</a>
                 </div>
             </div>
-        </div>
-        
-        <div class="content-section">
-            <h2><i class="fas fa-user-graduate"></i> About Me</h2>
-            <p>I'm a PhD candidate at Case Western Reserve University specializing in AI security and trustworthiness. My research 
-                focuses on watermarking and forensics for large language models, essentially creating ways to trace and verify AI-generated content.</p>
-            <p>With a background spanning both Computer Science and Psychology, I bring a unique perspective to understanding how AI systems interact 
-                with people and society. I'm passionate about building AI that's not just powerful, but transparent and accountable.</p>
-            <p>My work addresses critical questions: How do we detect AI-generated content? How do we ensure AI systems are trustworthy 
-                across different industries? How do we govern these technologies responsibly?</p>
+            </div>
+            <div class="about-content">
+                <p>I am a PhD candidate in Computer Science at Case Western Reserve University, where I work in the <a href="https://engineering.case.edu/research/labs/SPiD" target="_blank" rel="noopener">Security, Privacy, and Data Science Laboratory (SPiD Lab)</a> with my advisor <a href="https://engineering.case.edu/research/labs/SPiD/lab-members/erman" target="_blank" rel="noopener">Professor Erman Ayday</a>. My research focuses on AI security and forensics, including watermarking and provenance tracking for large language models and AI-generated content; AI governance and policy frameworks for responsible deployment; and trustworthy AI methods to ensure systems are transparent, accountable, and reliable in real-world applications. I am a member of the <a href="https://case.edu/provost/initiatives/innovation/ai-education/about-ai-education/ai-task-force" target="_blank" rel="noopener">Case Western Reserve AI Task Force</a>, which promotes equitable and ethical access to AI training and tools across the university. I am completing a research internship at Sandia National Laboratories focusing on AI security.</p>
+                <p>I graduated from Ohio University with Bachelor of Science degrees in Computer Science and Psychology. As a <a href="https://www.ohio.edu/news/2023/03/ohios-choose-ohio-first-scholars-present-ohio-statehouse" target="_blank" rel="noopener">Choose Ohio First</a> scholar, I presented research on machine learning for network attack detection at the Ohio Statehouse. During my undergraduate studies, I developed a <a href="https://www.ohio.edu/news/2023/04/computer-science-students-design-app-help-children-foster-care" target="_blank" rel="noopener">mobile application for foster children</a> to preserve childhood memories, worked on signal processing for nuclear physics experiments at <a href="https://inpp.ohio.edu/~rochej/group_page/group_members.html" target="_blank" rel="noopener">Jefferson Lab</a>, and interned at Cisco and Sherwin-Williams.</p>
+            </div>
         </div>
 
         <div class="content-section">
-            <h2><i class="fas fa-book"></i> Selected Publications</h2>
-            <div class="publications-grid">
-                <div class="publication-item-featured">
-                    <div class="publication-header">
-                        <h3>Topic-Based Watermarks for Large Language Models</h3>
-                        <div class="authors">Alexander Nemecek, Yuzhou Jiang, Erman Ayday</div>
-                    </div>
-                    <div class="publication-content">
-                        <div class="tldr">
-                            <h4>TL;DR</h4>
-                            <p>This paper proposes a topic-based watermarking scheme for large language models that partitions vocabulary into semantically aligned token subsets rather than random lists. We demonstrate that our method achieves comparable text quality to industry systems like Google's SynthID-Text while providing enhanced robustness against paraphrasing and lexical perturbation attacks, offering a lightweight approach that requires minimal computational overhead and facilitates straightforward adoption in production pipelines.</p>
-                        </div>
-                        <div class="publication-actions">
-                            <a href="https://arxiv.org/pdf/2404.02138" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-file-pdf"></i> Read Paper
-                            </a>
-                            <button class="btn btn-secondary" onclick="showBibtex('bibtex1')">
-                                <i class="fas fa-quote-left"></i> BibTeX
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item-featured">
-                    <div class="publication-header">
-                        <h3>Watermarking Without Standards Is Not AI Governance</h3>
-                        <div class="authors">Alexander Nemecek, Yuzhou Jiang, Erman Ayday</div>
-                    </div>
-                    <div class="publication-content">
-                        <div class="tldr">
-                            <h4>TL;DR</h4>
-                            <p>This paper argues that current watermarking for AI-generated content lacks the technical robustness and standardization needed for effective governance, often failing basic transformations like paraphrasing. We propose a three-layer framework requiring technical standards, independent audits, and enforceable policies to transform watermarking from symbolic compliance into meaningful accountability.</p>
-                        </div>
-                        <div class="publication-actions">
-                            <a href="https://arxiv.org/pdf/2505.23814" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-file-pdf"></i> Read Paper
-                            </a>
-                            <button class="btn btn-secondary" onclick="showBibtex('bibtex2')">
-                                <i class="fas fa-quote-left"></i> BibTeX
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <h2>Selected Publications</h2>
+            <div class="publication-citation">
+                <p class="citation-title">Topic-Based Watermarks for Large Language Models.</p>
+                <p class="citation-authors"><strong>Alexander Nemecek</strong>, Yuzhou Jiang, Erman Ayday. arXiv preprint, 2024.</p>
+                <p class="citation-links">
+                    <a href="https://arxiv.org/pdf/2404.02138" target="_blank">PDF</a>
+                    <a href="#" onclick="showBibtex('bibtex1'); return false;">BibTeX</a>
+                </p>
             </div>
+            <div class="publication-citation">
+                <p class="citation-title">Watermarking Without Standards Is Not AI Governance.</p>
+                <p class="citation-authors"><strong>Alexander Nemecek</strong>, Yuzhou Jiang, Erman Ayday. arXiv preprint, 2025.</p>
+                <p class="citation-links">
+                    <a href="https://arxiv.org/pdf/2505.23814" target="_blank">PDF</a>
+                    <a href="#" onclick="showBibtex('bibtex2'); return false;">BibTeX</a>
+                </p>
+            </div>
+            <p class="view-all-link"><a href="publications.html">View all publications &rarr;</a></p>
         </div>
 
         <!-- BibTeX Modal -->
@@ -115,52 +73,37 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-primary" onclick="copyBibtex()">
-                        <i class="fas fa-copy"></i> Copy Citation
+                        <i class="fas fa-copy"></i> Copy
                     </button>
                 </div>
             </div>
         </div>
 
         <div class="content-section">
-            <h2><i class="fas fa-newspaper"></i> Recent Updates</h2>
-            <div class="update-grid">
-                <div class="update-item">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Workshop Paper Accepted</h3>
-                    <p>Our workshop paper on Watermarking AI Governance has been accepted at ICML's Technical AI Governance Workshop 2025!</p>
-                </div>
-                <div class="update-item">
-                    <i class="fas fa-building"></i>
-                    <h3>Research Internship</h3>
-                    <p>Starting year-round research internship at Sandia National Labs focusing on AI security.</p>
-                </div>
-                <div class="update-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>PhD Candidacy</h3>
-                    <p>Successfully advanced to PhD candidacy at CWRU in April 2025.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-section">
-            <h2><i class="fas fa-microscope"></i> Research Interests</h2>
-            <div class="research-grid">
-                <div class="research-area">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>AI Security & Forensics</h3>
-                    <p>Developing watermarking and provenance tracking techniques for large language models and AI-generated content.</p>
-                </div>
-                <div class="research-area">
-                    <i class="fas fa-balance-scale"></i>
-                    <h3>AI Governance</h3>
-                    <p>Exploring policy frameworks and ethical guidelines for responsible AI deployment across different domains.</p>
-                </div>
-            <div class="research-area">
-                    <i class="fas fa-search"></i>
-                    <h3>Trustworthy AI</h3>
-                    <p>Investigating methods to ensure AI systems are transparent, accountable, and reliable in real-world applications.</p>
-            </div>
-            </div>
+            <h2>News</h2>
+            <ul class="news-list">
+                <li class="news-item">
+                    <span class="news-date">2025</span>
+                    <div>
+                        <h3>Workshop Paper Accepted</h3>
+                        <p>Our paper on Watermarking AI Governance has been accepted at ICML's Technical AI Governance Workshop 2025.</p>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">2025</span>
+                    <div>
+                        <h3>Research Internship</h3>
+                        <p>Starting year-round research internship at Sandia National Laboratories focusing on AI security.</p>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">Apr 2025</span>
+                    <div>
+                        <h3>PhD Candidacy</h3>
+                        <p>Successfully advanced to PhD candidacy at Case Western Reserve University.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
 

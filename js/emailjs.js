@@ -9,7 +9,7 @@
         e.preventDefault();
         
         submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.textContent = 'Sending...';
         formStatus.style.display = 'none';
         
         const templateParams = {
@@ -32,7 +32,7 @@
         })
         .finally(function() {
             submitBtn.disabled = false;
-            submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+            submitBtn.textContent = 'Send Message';
         });
     });
     

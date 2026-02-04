@@ -7,15 +7,103 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
-    <script src="js/bubbles.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <main>
-        <h1 class="page-title">Education & Experience</h1>
-        
+        <div class="page-header-with-toggle">
+            <h1 class="page-title">Education & Experience</h1>
+            <div class="view-toggle" role="group" aria-label="View mode">
+                <span class="view-toggle-label view-toggle-short">Summary</span>
+                <button type="button" class="view-toggle-slider" id="experience-view-toggle" aria-pressed="false" aria-label="Toggle between summary and detailed view">
+                    <span class="view-toggle-track">
+                        <span class="view-toggle-thumb"></span>
+                    </span>
+                </button>
+                <span class="view-toggle-label view-toggle-long">Detailed</span>
+            </div>
+        </div>
+
+        <div class="experience-views-wrapper" aria-live="polite">
+        <!-- SHORT VIEW -->
+        <div id="experience-short-view" class="experience-view">
+            <div class="content-section">
+                <h2>Education</h2>
+                <div class="experience-item-compact">
+                    <h3>PhD in Computer Science</h3>
+                    <p><strong>Case Western Reserve University</strong> | Cleveland, OH | Expected May 2027</p>
+                    <p class="compact-summary">Focus: LLM watermarking, AI governance. Advisor: Dr. Erman Ayday.</p>
+                </div>
+                <div class="experience-item-compact">
+                    <h3>BS in Computer Science, BS in Psychology</h3>
+                    <p><strong>Ohio University</strong> | Athens, OH | May 2023</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                <div class="experience-item-compact">
+                    <h3>Graduate Researcher</h3>
+                    <p><strong>Case Western Reserve University</strong> | Aug 2023 - Present</p>
+                    <p class="compact-summary">LLM watermarking & AI governance; led AI stress detection platform; genomic metadata sharing framework.</p>
+                </div>
+                <div class="experience-item-compact">
+                    <h3>Research & Development Intern</h3>
+                    <p><strong>Sandia National Laboratories</strong> | May 2024 - Present</p>
+                    <p class="compact-summary">Real-time threat detection with fine-tuned LLMs; prompt engineering framework for security teams.</p>
+                </div>
+                <div class="experience-item-compact">
+                    <h3>Software Engineer Intern</h3>
+                    <p><strong>Cisco Systems</strong> | May 2023 - Aug 2023</p>
+                    <p class="compact-summary">BOM analysis platform; 60% reduction in analysis time; pricing trend visualizations.</p>
+                </div>
+                <div class="experience-item-compact">
+                    <h3>Student Researcher</h3>
+                    <p><strong>Ohio University</strong> | Sept 2021 - Mar 2023</p>
+                    <p class="compact-summary">ML for DDoS detection (95% accuracy); VR/AR for perception disorders & human-robot interaction; mobile app for foster children; nuclear physics data analysis.</p>
+                </div>
+                <div class="experience-item-compact">
+                    <h3>Software Development Intern</h3>
+                    <p><strong>Sherwin-Williams</strong> | May 2022 - Aug 2022</p>
+                    <p class="compact-summary">SQL/Snowflake pipelines; Tableau analytics for inventory & sales forecasting.</p>
+                </div>
+                <div class="experience-item-compact">
+                    <h3>IT Technician Intern</h3>
+                    <p><strong>Breakthrough Schools</strong> | June 2021 - Aug 2021</p>
+                    <p class="compact-summary">Managed 500+ network devices; security audits; asset management.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Teaching</h2>
+                <div class="experience-item-compact">
+                    <h3>Graduate Teaching Assistant</h3>
+                    <p><strong>Case Western Reserve University</strong> | 2023 - 2024</p>
+                    <p class="compact-summary">Computer Security, Data Structures — lectures and materials for 100-250+ students.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Skills</h2>
+                <div class="skills-compact">
+                    <span class="skill-tag">ML & AI</span>
+                    <span class="skill-tag">Cybersecurity</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C/C++</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- LONG VIEW (Detailed) -->
+        <div id="experience-long-view" class="experience-view experience-view-active">
         <div class="content-section">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <h2>Education</h2>
             <div class="experience-item-primary">
                 <h3>PhD in Computer Science</h3>
                 <p><strong>Case Western Reserve University</strong> | Cleveland, OH | Expected May 2027</p>
@@ -116,28 +204,21 @@
         </div>
 
         <div class="content-section">
-            <h2><i class="fas fa-chalkboard-teacher"></i> Teaching Experience</h2>
+            <h2>Teaching</h2>
             <div class="experience-item-primary">
                 <h3>Graduate Teaching Assistant</h3>
                 <p><strong>Case Western Reserve University</strong> | Cleveland, OH | 2023 - 2024</p>
                 <p class="info-label"><strong>Courses:</strong> <span class="info-content">Computer Security (Dr. Stanley Omeike, Dr. Brian Krupp) | Data Structures (Dr. Erman Ayday)</span></p>
                 <ul>
-                    <ul>
-                        <li>Delivered lectures and created supplementary course materials for 100-250+ 
-                            students across foundational computer science and cybersecurity topics, demonstrating 
-                            ability to communicate complex technical concepts to diverse audiences.</li>
-                        <li>Developed teaching materials and practice problems that enhanced student 
-                            understanding of security principles and algorithmic thinking, skills directly applicable to 
-                            mentoring junior developers in R&D environments.</li>
-                        <li>Provided individualized guidance during office hours, helping students troubleshoot technical 
-                            challenges and develop problem-solving approaches essential for research and development work.</li>
-                    </ul>
+                    <li>Delivered lectures and created supplementary course materials for 100-250+ students across foundational computer science and cybersecurity topics.</li>
+                    <li>Developed teaching materials and practice problems that enhanced student understanding of security principles and algorithmic thinking.</li>
+                    <li>Provided individualized guidance during office hours, helping students troubleshoot technical challenges.</li>
                 </ul>
             </div>
         </div>
 
         <div class="content-section">
-            <h2><i class="fas fa-tools"></i> Skills</h2>
+            <h2>Skills</h2>
             <div class="skills-container">
                 <div class="skills-row">
                     <div class="skill-category">
@@ -188,8 +269,11 @@
                 </div>
             </div>
         </div>
+        </div><!-- /experience-long-view -->
+        </div><!-- /experience-views-wrapper -->
     </main>
     
     <script src="js/main.js"></script>
+    <script src="js/experience.js"></script>
 </body>
 </html>
